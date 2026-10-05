@@ -19,10 +19,10 @@ This build is for Option C only. It does not implement Options A or B.
 The single Option C page presents three UI states:
 
 1. **Common context:** lesson content, formula, learner task, Option C identity, and theme control.
-2. **Inline scaffolding:** selecting a formula symbol opens a nearby explanation panel. The learner chooses a depth such as quick reminder, comparison, or example. Responses are canned and tied to the selected symbol and lesson context.
-3. **User decision:** continue the lesson, choose another symbol, or close the helper. Reset returns the prototype to its initial common context.
+2. **Inline scaffolding:** selecting `∂`, `η`, or `−` in the formula opens an explanation panel on the right. The learner chooses analysis level 1, 2, or 3 on a slider. A contextual sample explanation updates immediately for the selected symbol and level.
+3. **User decision:** continue the lesson, inspect another symbol, or close the helper after a one-question quick check. “Trở về mặc định” restores the original lesson text and initial helper state.
 
-The explanation panel stays near the formula and does not obscure it. The learner remains in control; the prototype does not claim the learner has understood unless they choose that action.
+The explanation panel stays to the right of the lesson and does not obscure the formula. The learner remains in control; the prototype does not claim the learner has understood unless they answer the quick check and choose to continue.
 
 ## Visual design and themes
 
@@ -32,6 +32,9 @@ The explanation panel stays near the formula and does not obscure it. The learne
 - Keep the lesson as the visual anchor. Use a two-column desktop layout for lesson content and the inline helper, with a usable stacked layout at narrow widths.
 - Use Inter for interface text and a math-capable font for formulas.
 - Preserve the supplied color direction: slate/white surfaces and blue accent in light mode; deep slate surfaces, light text, and clear blue accent in dark mode.
+- Mark new lesson knowledge in green. Distinguish prerequisite knowledge with orange and blue; include a visible legend.
+- Provide “Trở về mặc định” to restore the original lesson wording and the default interaction state.
+- Offer a one-question multiple-choice quick check before the learner closes the helper.
 
 ## Component and styling system
 
@@ -61,6 +64,7 @@ The explanation panel stays near the formula and does not obscure it. The learne
 
 - Provide direct local access to Option C without a login screen or auth gate.
 - No backend, real model, or external API is required; use canned outputs.
+- Canned explanations simulate immediate AI generation and change with the selected symbol and slider level.
 - Start the development server and open the local URL for manual visual QA.
 - QA the default light theme, dark theme, theme persistence, symbol selection, explanation-depth controls, close/continue/reset paths, keyboard focus, and narrow viewport layout.
 - The user requested the finished local page to be opened for manual QA.
@@ -86,6 +90,9 @@ Use those skills to guide the shadcn/Radix component approach and GSAP patterns.
 - The single Option C prototype starts locally and is directly accessible without login.
 - Its common lesson context, inline explanation, and learner-decision states are operable.
 - The same formula and task remain visible/available throughout the C flow.
+- Selecting `∂`, `η`, or `−` opens the helper to the formula's right; slider levels 1–3 update a contextual explanation immediately.
+- New lesson content is green; prerequisite content is orange or blue, with a visible legend.
+- The one-question quiz precedes helper closure, and “Trở về mặc định” restores original lesson wording and the initial interaction state.
 - Light mode is the default; the user can switch to dark and back, and the choice persists locally.
 - The page uses the requested design system and motion tools without conflicting animations.
 - Reduced-motion preference is respected, and keyboard users can operate the primary interactions.
