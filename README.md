@@ -141,7 +141,10 @@ Test-ready được đánh giá riêng ở Gate 4.
 #### GATE 3 — Human Control
 
 - [x] Mỗi option nêu expectation, role/agency, evidence/uncertainty và control/recovery.
-- [ ] Cần kiểm tra trong prototype rằng các affordance đã mô tả ở đây hoạt động và tester hiểu được mà không cần hướng dẫn.
+
+**Evidence từ test prototype:** Nhung tự thao tác A/B/C với cùng task; facilitator chỉ quan sát, không giải thích giao diện. Ở **A**, Nhung thấy các lựa chọn “Chẩn đoán lại” và “Tôi tự chọn bài ôn” nhưng không bấm vì cho rằng chẩn đoán đúng. Ở **B**, Nhung dùng “Đặt lại bản đồ” sau khi chọn nhiều node và quay lại trạng thái ban đầu. Ở **C**, Nhung đóng panel để tiếp tục slide sau khi làm quiz. Tester 3 cũng tự dùng cả ba; với C, họ chọn tiếp tục ngay sau phần giải thích.
+
+**Điều chưa xác minh:** Chưa quan sát A recovery hoạt động trong thao tác thật vì Nhung không cần dùng; cũng chưa có bằng chứng đầy đủ rằng mọi tester hiểu các lựa chọn sửa/dừng ở cả ba option. Gate 3 design criteria có trong bảng; kiểm tra usability chi tiết tiếp tục thuộc Gate 4.
 
 ### Chặng 4 — Build ba micro-prototype (80 phút)
 
