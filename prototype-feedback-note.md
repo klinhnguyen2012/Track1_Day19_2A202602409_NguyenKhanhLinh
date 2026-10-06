@@ -23,23 +23,54 @@
 
 ---
 
-## Feedback bổ sung — Option C (tester Nhung)
+## Feedback bổ sung — Nhung (đã thử đầy đủ A/B/C)
 
-**Tester/context:** Nhung tự học về AI/Data và từng bị khựng khi gặp “vector store”; trước đây đã học SQL và database cơ bản. Trong lần gặp khó, tester tìm định nghĩa trên Google/YouTube nhưng thấy tài liệu dài và mất hứng học. Buổi test dùng slide _Data Pipeline & Observability_. Chỉ ghi lại kết quả liên quan đến Option C từ buổi thử A/B/C.
+**Tester/context:** Nhung từng tự học bài về Data Pipeline & Observability và khựng khi gặp “agent RAG”, “vector store” cùng “data cascades”. Nhung từng học SQL/database cơ bản, đã tìm Google/YouTube nhưng thấy tài liệu dài và mất hứng. Buổi test kéo dài khoảng 20 phút; Nhung tự cầm chuột từ đầu đến cuối, facilitator chỉ quan sát, bấm giờ và ghi chép.
+
+| Observation | Option A — Socratic Diagnostic Chat | Option B — Prerequisite Concept Radar | Option C — Inline Scaffolding Co-pilot |
+| :--- | :--- | :--- | :--- |
+| **First action** | Đọc slide khoảng 12 giây, dừng ở “agent RAG” và “vector store”, rồi bấm “Tôi chưa hiểu đoạn này”. | Mở tab B, quan sát khoảng 10 giây rồi chọn node viền cam “Vector Store & Embeddings”. | Bấm “agent RAG” ngay trong slide rồi kéo slider độ sâu. |
+| **Chỗ dừng / do dự / hiểu sai** | Đọc lựa chọn câu hỏi 1 trong 14 giây; ở câu 2 do dự 9 giây giữa A/B và chọn B, được ghi là sai. | Bối rối vì nhiều mũi tên/node, không rõ đọc từ đâu; sau khi chọn node đầu, bấm thêm hai node và thấy rối mắt. | Ban đầu mải thử slider, không thấy quiz bên dưới; chỉ phát hiện sau khi kéo đến Mức 3 và cuộn xuống. |
+| **Evidence được đọc / bỏ qua** | Đọc kỹ thẻ kết luận, chú ý dòng “Độ tin cậy: 88%” và đọc phần tóm tắt. | Đọc lướt phần Database cũ; dừng lâu ở “Mối liên hệ với bài học hiện tại”. | Dừng lâu ở Mức 2, đọc so sánh Database truyền thống với Vector Store trong RAG; ban đầu bỏ qua quiz. |
+| **Sửa / lấy lại control** | Rê chuột qua “Chẩn đoán lại” và “Tôi tự chọn bài ôn” nhưng không bấm; nói phần chẩn đoán đã đúng chỗ vướng nên không cần sửa. | Bấm “Đặt lại bản đồ” sau khi chọn nhiều node; thử “Đối chiếu thuật ngữ trên slide” và thấy slide được viền xanh. | Kéo slider Mức 2 → 1 → 3; làm đúng quiz rồi đóng panel để quay lại slide. |
+| **Kết quả** | Nhận ra cần hiểu quan hệ giữa Database/index ngữ nghĩa và LLM/router; đánh giá phần tóm tắt đủ rõ. | Tìm thấy liên hệ với bài, nhưng nhiều node làm thao tác lúc đang kẹt trở nên quá tải. | Hiểu hơn qua so sánh cũ/mới, làm đúng quiz và quay lại bài. |
+
+**Lựa chọn:** Nhung chọn kết hợp — ưu tiên **C** khi đọc slide hằng ngày, giữ **A** làm phương án hỗ trợ khi hoàn toàn bế tắc. Không chọn **B** cho lúc đang kẹt bài; Nhung nói bản đồ có thể phù hợp hơn khi ôn tổng kết.
+
+**Lý do và trade-off:** C tiện vì giải thích ngay tại chỗ mà không che slide; đổi lại, người học phải tự nhận ra thuật ngữ đang gây khó. A chủ động chẩn đoán nhưng cần trả lời câu hỏi và tạm ngắt dòng đọc. B cho cái nhìn tổng quan nhưng nhiều node/mũi tên gây quá tải trong tình huống cần gỡ kẹt nhanh.
+
+**Evidence chống lại kỳ vọng:** Nhóm dự đoán B có thể hấp dẫn nhờ tính trực quan; Nhung lại thấy bản đồ gây ngợp khi đang cần tiếp tục học. Quiz ở C cũng bị bỏ qua lúc đầu.
+
+### Tách bốn lớp — Nhung
+
+- **OBSERVED:** Nhung thử cả ba option, có lúc trả lời sai câu chẩn đoán A, chọn nhiều node rồi reset ở B, và ban đầu không thấy quiz ở C. Cuối cùng chọn C cho đọc thường ngày và A làm hỗ trợ khi bế tắc.
+- **INTERPRETED:** Với Nhung, nối thuật ngữ mới với database/index đã biết giúp gỡ kẹt. Chẩn đoán A có ích khi cần AI dẫn dắt; B tăng tải lựa chọn khi người học đang vội.
+- **DECIDED — NEXT CHANGE (ghi trong note gốc):** Cân nhắc đưa một lối chẩn đoán ngắn từ A vào panel inline của C; chuyển B thành công cụ ôn tập cuối bài/chương; giữ micro-check sau phần giải thích. Đây là đề xuất từ một phiên test, chưa phải quyết định đã kiểm chứng.
+- **STILL UNPROVEN:** Chưa biết tester còn nhớ khái niệm sau vài ngày hay không; chưa thử C trên mã nguồn/cấu hình phức tạp hoặc dạng bài khác. Một phiên chưa đủ để kết luận user nào cũng cần cùng flow.
+
+---
+
+## Feedback bổ sung — Tester 3 (đã thử A/B/C)
+
+**Tester/context:** Người học từng tự học AI/Data qua slide và gặp thuật ngữ khó. Ghi chú dưới đây được tổng hợp từ phản hồi người dùng cung cấp; transcript/ghi âm chưa được cung cấp.
 
 | Observation | Note |
 | :--- | :--- |
-| **First action** | Bấm trực tiếp vào thuật ngữ **agent RAG** trên slide, rồi kéo thanh trượt độ sâu. |
-| **Chỗ dừng, do dự hoặc hiểu sai** | Ban đầu tập trung kéo slider, chưa để ý quiz ở bên dưới. Chỉ phát hiện quiz sau khi kéo đến Mức 3 và cuộn xuống. |
-| **Evidence được đọc hay bỏ qua** | Dừng lâu nhất ở Mức 2, đọc phần so sánh Database truyền thống với Vector Store trong RAG. Bỏ qua quiz lúc đầu. Nhận xét ngắn: “Vừa đọc slide vừa bấm thẳng vào thuật ngữ xem giải thích nhanh được.” |
-| **Cách tester sửa hoặc lấy lại control** | Tự kéo slider từ Mức 2 xuống Mức 1 rồi lên Mức 3 để so sánh. Sau khi làm đúng quiz, tự đóng panel để quay lại slide. |
-| **Option được chọn** | **C** được chọn làm cách ưu tiên khi đọc slide hằng ngày. Đây là đánh giá sau khi tester đã thử cả ba option, nhưng phần note này chỉ lưu kết quả C. |
-| **Lý do và trade-off** | Tester thấy tiện khi có thể xem giải thích ngay tại thuật ngữ trong lúc đọc slide. Trade-off được nêu cho C: người học cần tự nhận ra thuật ngữ mình đang vướng để bấm vào. |
-| **Evidence chống lại kỳ vọng của nhóm** | Quiz dễ bị bỏ sót khi nằm bên dưới phần giải thích; tester chỉ nhận ra sau khi kéo slider đến Mức 3 và cuộn trang. |
+| **A — First action** | Mở chat và nhập ngay thuật ngữ hoặc phần chưa hiểu. |
+| **A — Chỗ dừng / ma sát** | Hơi do dự khi phải trả lời liên tiếp vài câu chẩn đoán; tester cảm thấy mất nhịp học. |
+| **A — Kết quả / quyết định** | Xác định được một khái niệm nền còn thiếu, nhưng muốn quay lại bài nhanh hơn thay vì chat lâu. |
+| **B — First action** | Mở radar và xem các khái niệm liên quan. |
+| **B — Chỗ dừng / ma sát** | Dừng để hiểu các mức/quan hệ giữa khái niệm; không cần facilitator hỗ trợ. Phân vân nên bắt đầu từ node nào khi có nhiều lựa chọn. |
+| **B — Kết quả / quyết định** | Tìm được kiến thức nền cần xem lại. |
+| **C — First action** | Bấm trực tiếp vào ký hiệu/thuật ngữ khó trong bài. |
+| **C — Chỗ dừng / ma sát** | Gần như không do dự; hiểu phần giải thích ngắn và giữ được ngữ cảnh bài học. |
+| **C — Kết quả / quyết định** | Tìm được phần cần biết và chọn tiếp tục bài ngay sau đó. |
+| **Option được chọn** | **C — Inline Scaffolding Co-pilot.** Tester chọn C vì hỗ trợ xuất hiện tại chỗ đang vướng, ít chuyển ngữ cảnh và không cần viết prompt dài. |
+| **So sánh / evidence trái kỳ vọng** | Tester nhận xét A nghe có vẻ thông minh nhưng gây nhiều ma sát hơn; B giúp nhìn kiến thức nền nhưng nhiều lựa chọn có thể gây quá tải. C đơn giản hơn nhưng phù hợp hơn với cách học của tester này. |
 
-### Tách bốn lớp — Option C
+### Tách bốn lớp — Tester 3
 
-- **OBSERVED:** Tester bấm “agent RAG”, kéo slider, đọc kỹ phần so sánh ở Mức 2, ban đầu bỏ qua quiz, sau đó tìm thấy quiz khi cuộn xuống, trả lời đúng và đóng panel để tiếp tục slide.
-- **INTERPRETED:** Giải thích đặt cạnh thuật ngữ hỗ trợ tester đối chiếu kiến thức cũ với thuật ngữ mới mà không rời slide. Vị trí quiz hiện tại khiến tester có thể không nhận ra tính năng kiểm tra.
-- **DECIDED — NEXT CHANGE:** Đưa quiz lên vị trí dễ thấy hơn trong panel; kiểm tra ở phiên sau xem tester có tự phát hiện và hoàn thành quiz mà không cần kéo đến Mức 3/cuộn xuống không.
-- **STILL UNPROVEN:** Chưa biết hành vi này có lặp lại với tester khác hay không; chưa có bằng chứng về khả năng nhớ kiến thức sau buổi học hoặc hiệu quả của từng mức độ sâu trên các dạng nội dung khác.
+- **OBSERVED:** Tester nhập thuật ngữ vào A và do dự trước chuỗi câu hỏi; mở B và phân vân giữa các node; ở C bấm thuật ngữ ngay trong bài, hiểu giải thích ngắn và tiếp tục học.
+- **INTERPRETED:** Trong phiên này, việc đặt hỗ trợ ngay cạnh điểm kẹt có thể giảm chuyển ngữ cảnh; chuỗi hỏi của A và nhiều lựa chọn của B tạo thêm quyết định cho tester.
+- **DECIDED — NEXT CHANGE:** Giữ C là option ưu tiên cho iteration tiếp theo; làm quiz dễ nhận ra hơn dựa trên phiên Nhung và kiểm tra lại với tester kế tiếp.
+- **STILL UNPROVEN:** Đây là một tester; chưa biết pattern có lặp lại với người học khác, các dạng bài khác hoặc người không có background tech hay không. Chưa có kiểm tra hiểu/nhớ sau một khoảng thời gian.

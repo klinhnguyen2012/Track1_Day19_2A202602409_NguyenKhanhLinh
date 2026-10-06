@@ -20,7 +20,7 @@
 
 - Cung cấp transcript và ghi chú thực tế, rồi sửa cách mô tả pain của Tiên, Chi và Linh để không gộp ba trường hợp thành một kết luận chung quá mức.
 - Yêu cầu rút gọn raw quote và làm rõ Linh phụ trách Option C.
-- Làm rõ rằng tester đầu tiên chỉ thử C; với nguồn của Nhung, yêu cầu chỉ giữ kết quả liên quan đến C.
+- Ban đầu yêu cầu chỉ giữ kết quả C của Nhung; sau đó yêu cầu khôi phục đầy đủ A/B/C từ feedback note gốc. Đã đối chiếu attachment nguồn và cập nhật hành vi, lựa chọn cùng trade-off của Nhung.
 - Đối chiếu hành vi cụ thể trong từng phiên—thuật ngữ được bấm, slider, quiz, việc quay lại bài—và yêu cầu ghi rõ phần còn thiếu thay vì suy diễn.
 - Cung cấp năm gate đánh giá; từ đó tách tiêu chí Meaningful Options khỏi Test-ready và giữ Gate 4/5 ở trạng thái chưa đạt khi chưa có đủ prototype và feedback.
 
@@ -28,4 +28,4 @@
 
 - Prototype dùng nội dung mẫu/canned output; chưa kết nối model hoặc API AI thật. Các giải thích và quiz không phải kết quả sinh trực tiếp bởi mô hình trong lúc test.
 - AI hỗ trợ viết, cấu trúc và triển khai; Linh chịu trách nhiệm kiểm tra nội dung, nguồn evidence, hành vi prototype và các quyết định thiết kế trước khi nộp.
-- Hai phiên Option C hiện có chỉ là tín hiệu ban đầu. Chúng không chứng minh solution đã validated, không thay thế ba Feedback Notes độc lập, và chưa đủ để khẳng định C tốt hơn A/B.
+- Ba phiên test được ghi lại; trong đó tester đầu chỉ thử C, còn Nhung và Tester 3 đã thử A/B/C. Đây vẫn là tín hiệu ban đầu, không chứng minh solution đã validated hoặc C tốt hơn cho mọi người học.

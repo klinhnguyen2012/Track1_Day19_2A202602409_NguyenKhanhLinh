@@ -16,7 +16,7 @@ Track1_Day19_2A202602409_NguyenKhanhLinh/
 ├── three-options-design-sheet.md    # Evidence, Solution Options và Human–AI Design pass
 ├── prototype-link.md                # Hướng dẫn chạy và link micro-prototype
 ├── prototype-feedback-note.md       # Ghi chú phiên test Linh facilitate
-├── group-feedback-synthesis.md      # Tổng hợp 3 Feedback Notes và Group Next Change
+├── group-feedback-synthesis.md      # Bản tổng hợp Feedback Notes và Group Next Change
 ├── ai-support-log.md                # Khai báo minh bạch việc dùng AI
 ├── .gitignore                       # Bỏ qua dependency, build output và skill local
 ├── front-end/                       # Toàn bộ source và cấu hình giao diện Option C
@@ -47,7 +47,7 @@ Track1_Day19_2A202602409_NguyenKhanhLinh/
     └── plans/                        # Kế hoạch triển khai Option C
 ```
 
-Prototype Option C chạy bằng React/Vite, Tailwind CSS và Radix UI. Giao diện mở trực tiếp không cần login; hướng dẫn chạy local nằm trong `prototype-link.md` (chạy lệnh từ `front-end/`). Nội dung giải thích/quiz theo agent RAG, vector store, data cascades và observability là dữ liệu mẫu theo mức phân tích, chưa kết nối model/API. A/B và link/test notes vẫn cần hoàn thiện.
+Prototype Option C chạy bằng React/Vite, Tailwind CSS và Radix UI. Giao diện mở trực tiếp không cần login; hướng dẫn chạy local nằm trong `prototype-link.md` (chạy lệnh từ `front-end/`). Nội dung giải thích/quiz theo agent RAG, vector store, data cascades và observability là dữ liệu mẫu theo mức phân tích, chưa kết nối model/API. A/B do thành viên khác duy trì ở prototype riêng; nhóm cần gom ba URL để chạy cùng task và ghi đủ feedback.
 
 ---
 
@@ -177,9 +177,9 @@ Prototype chỉ được xem là test-ready khi:
 - Mỗi option thể hiện được cách user lấy lại control.
 - Có đường reset về common context.
 
-**Trạng thái cá nhân của Linh:** prototype Option C đã có trong workspace và local preview; phần A/B, bộ prototype nhóm và test chéo vẫn cần hoàn thiện trước khi nhóm đánh dấu Gate 4 đạt.
+**Trạng thái cá nhân của Linh:** prototype Option C có trong workspace và local preview. Option A/B nằm trong prototype riêng của các thành viên phụ trách; cần gom link và kiểm tra cả ba với cùng task.
 
-**GATE 4 — Trạng thái hiện tại:** Chưa đạt. Workspace cá nhân hiện mới có Option C; cần có A/B và kiểm thử để tester ngoài nhóm tự dùng cả ba với cùng task, không cần facilitator giải thích.
+**GATE 4 — Chưa xác nhận đạt trên các link hiện hành:** Note gốc của Nhung ghi tester tự thao tác đầy đủ A/B/C theo cùng task; facilitator không cầm chuột hay hướng dẫn. Note cũng có bằng chứng control/recovery ở cả ba: A có lựa chọn chẩn đoán lại/tự chọn bài ôn, B có reset bản đồ, C đóng panel để về slide. Cần đối chiếu phiên bản trong buổi test với ba link hiện tại ở `prototype-link.md`; link C mới chưa xác minh truy cập được từ môi trường này. Nếu link nào trỏ tới prototype đã đổi kể từ buổi test, chạy lại cùng task trên phiên bản đó.
 
 #### 3. Build order
 
@@ -202,7 +202,7 @@ Watch for: panel bên phải có giữ được mạch đọc không; user có h
 Do not explain: thuật ngữ nào nên chọn, nên đặt mức nào, hoặc đáp án quiz.
 ```
 
-**Gate 4 — Test-ready:** một người không build prototype có thể mở A/B/C, thực hiện cùng task và quay về context ban đầu mà không cần người khác giải thích. Gate này sẽ được đánh dấu đạt sau khi prototype được build và kiểm tra theo các tiêu chí trên.
+**Gate 4 — trạng thái:** xem phần trạng thái hiện tại ở trên; chưa đánh dấu đạt cho đến khi đối chiếu đủ A/B/C và xác nhận test-ready trên các bản đang chia sẻ.
 
 ### Chặng 5 — Chuẩn bị Test Prompt & tiêu chí quan sát (15 phút)
 
@@ -247,11 +247,11 @@ Kiểm thử A/B/C với ba người ngoài nhóm theo task chung. Ghi hành vi 
 
 | Tester / facilitator | Option A — Socratic Chat | Option B — Concept Radar | Option C — Inline Co-pilot | Đánh đổi / lựa chọn |
 | :--- | :--- | :--- | :--- | :--- |
-| Tester 1 | _Điền sau test_ | _Điền sau test_ | _Điền sau test_ | _Điền sau test_ |
-| Tester 2 | _Điền sau test_ | _Điền sau test_ | _Điền sau test_ | _Điền sau test_ |
-| Tester 3 (Linh facilitate) | _Điền sau test_ | _Điền sau test_ | _Điền sau test_ | _Điền sau test_ |
+| Tester ngoài nhóm 1 | Chưa có ghi chú trong repo | Chưa có ghi chú trong repo | Đã thử riêng C; xem `prototype-feedback-note.md` | Chưa so sánh A/B/C |
+| Nhung | Đọc slide, dùng chẩn đoán; do dự và chọn sai câu 2; không cần recovery | Bối rối với node, chọn nhiều node rồi reset; xem liên hệ với bài | Chọn C cho việc học thường ngày; bỏ lỡ quiz lúc đầu, sau đó làm đúng và quay lại slide | C là cách chính, A là phương án khi bế tắc |
+| Tester 3 | Có ghi chú hành vi và ma sát | Có ghi chú hành vi và ma sát | Bấm thuật ngữ, hiểu giải thích và tiếp tục gần như không do dự | Chọn C vì hỗ trợ tại chỗ, ít chuyển ngữ cảnh |
 
-**Feedback Notes:** ghi hành vi/quote, diễn giải giả thuyết và câu hỏi còn mở cho từng tester trong `prototype-feedback-note.md`.
+**Feedback Notes:** đã ghi ba phiên tester trong `prototype-feedback-note.md`. Phiên đầu chỉ thử C; Nhung và Tester 3 thử A/B/C. `group-feedback-synthesis.md` tổng hợp pattern, khác biệt, một Group Next Change và Still Unproven. Các kết quả là tín hiệu định tính sơ bộ, không chứng minh solution đã validated.
 
 **Group Next Change:**
 

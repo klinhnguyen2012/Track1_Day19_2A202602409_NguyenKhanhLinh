@@ -1,49 +1,55 @@
 # Group Feedback Synthesis — Option C
 
 > **Case:** Case A — AI Tutor: Diagnostic Refresher  
-> **Phạm vi bản này:** Tổng hợp các quan sát Option C hiện có. Chưa đủ dữ liệu để tổng hợp hoặc so sánh A/B/C, và chưa được xem là validation.
+> **Phạm vi:** Tổng hợp tín hiệu về Option C từ ba phiên; bao gồm so sánh A/B có trong ghi chú đầy đủ của Nhung và Tester 3. Phiên tester đầu chỉ thử C. Đây là tín hiệu định tính ban đầu, không phải validation.
 
-## 1. Evidence hiện có
+## 1. Evidence từ ba phiên
 
-| Phiên test | Context | Hành vi với Option C | Ma sát / bằng chứng trái kỳ vọng |
+| Phiên | Hành vi với C | Ma sát / điều trái kỳ vọng | So sánh A/B nếu có |
 | :--- | :--- | :--- | :--- |
-| **Tester ngoài nhóm — chỉ thử C** | Người học có background tech; đôi khi gặp chỗ mắc nhưng thường hỏi chatbot. | Bấm thuật ngữ highlight; đọc giải thích; xem thêm thuật ngữ khác; làm đúng quiz và chọn “Tiếp tục”. Hoàn tất trong dưới một phút. Ghi nhận chữ highlight rõ và flow dễ theo. | Không để ý chú giải màu. Không ghi nhận do dự hoặc cần trợ giúp. |
-| **Nhung — kết quả C trích từ phiên A/B/C** | Từng bị khựng với “vector store” khi tự học Data Pipeline; đã thử tìm trên Google/YouTube nhưng thấy tài liệu dài. | Bấm “agent RAG”, đọc kỹ so sánh ở Mức 2, tự thử các mức 1–3; làm đúng quiz rồi đóng panel để quay lại slide. Nhung đánh giá C tiện cho việc đọc slide hằng ngày. | Ban đầu không thấy quiz bên dưới phần giải thích; chỉ tìm ra sau khi kéo tới Mức 3 và cuộn xuống. C đòi hỏi người học tự nhận ra thuật ngữ cần bấm. |
+| **Tester ngoài nhóm — chỉ thử C** | Bấm thuật ngữ highlight, đọc giải thích, xem thêm thuật ngữ, làm đúng quiz và chọn “Tiếp tục”; hoàn tất trong dưới một phút. | Không để ý chú giải màu. Không ghi nhận do dự hoặc cần trợ giúp. | Không thử A/B; không có so sánh. |
+| **Nhung — đã thử đầy đủ A/B/C** | C: bấm “agent RAG”, đọc phần so sánh ở Mức 2, thử các mức 1–3, làm đúng quiz và đóng panel để quay lại slide. Chọn C cho việc đọc hằng ngày, giữ A làm phương án khi bế tắc. | A: do dự ở câu chẩn đoán 2 và chọn sai; B: bối rối với nhiều node, chọn thêm node rồi reset; C: ban đầu không thấy quiz dưới phần giải thích. | C tiện khi đọc slide; A hữu ích khi cần AI chẩn đoán nhưng làm ngắt mạch; B giúp xem quan hệ nhưng gây ngợp khi đang cần gỡ kẹt nhanh. |
+| **Tester 3 — đã thử A/B/C** | Bấm trực tiếp vào ký hiệu/thuật ngữ khó, hiểu giải thích ngắn, giữ được context và tiếp tục bài gần như không do dự. Chọn C. | Không ghi nhận ma sát với C trong phản hồi cung cấp; không có thông tin tester có tìm hoặc hoàn thành quiz hay để ý chú giải màu không. | A: chuỗi câu hỏi làm tester do dự và thấy mất nhịp. B: hiểu radar nhưng phân vân chọn node khi có nhiều lựa chọn. Tester chọn C vì ít chuyển ngữ cảnh và không phải viết prompt dài. |
 
 ## 2. Pattern và khác biệt
 
-### Tín hiệu lặp lại trong hai phiên
+### Tín hiệu lặp lại về C
 
-- Cả hai tester đều bắt đầu bằng cách bấm trực tiếp vào thuật ngữ trên slide.
-- Cả hai dùng phần giải thích tại chỗ rồi quay lại hoặc tiếp tục bài học.
-- Hai phiên cho thấy người học có thể điều khiển hỗ trợ theo nhu cầu: xem thuật ngữ khác hoặc đổi độ sâu phân tích.
+- Cả ba phiên đều bắt đầu bằng việc bấm trực tiếp vào thuật ngữ đang hiện trên slide.
+- Cả ba ghi nhận tester đọc giải thích rồi quay lại hoặc tiếp tục bài; hai phiên ghi cụ thể việc tiếp tục bài sau khi dùng hỗ trợ.
+- Hai tester đã so sánh A/B/C đều ưu tiên C. Nhung vẫn muốn giữ A làm phương án dự phòng khi không tự khoanh vùng được điểm kẹt. Lý do chọn C: hỗ trợ tại chỗ và ít chuyển ngữ cảnh.
 
-Đây là tín hiệu ban đầu từ hai phiên, không chứng minh rằng mọi người học đều hiểu highlight hoặc muốn dùng C.
+Đây là tín hiệu từ ba phiên với prototype, không chứng minh C hiệu quả hơn với mọi người học.
 
-### Khác biệt cần giữ lại
+### Khác biệt và bằng chứng trái kỳ vọng
 
-- Tester thứ nhất tìm và hoàn thành quiz mà không gặp trở ngại được ghi nhận; Nhung ban đầu bỏ lỡ quiz vì nó nằm dưới phần giải thích.
-- Tester thứ nhất không để ý chú giải màu. Chưa có quan sát tương ứng về chú giải màu trong ghi nhận của Nhung.
-- Chỉ phiên thứ nhất có thời lượng hoàn tất được ghi là dưới một phút; không suy rộng thời gian này sang phiên của Nhung.
+- Quiz được tìm thấy và hoàn thành ở phiên tester chỉ thử C; Nhung ban đầu bỏ qua quiz vì vị trí bên dưới phần giải thích. Tester 3 không nêu việc dùng quiz, nên không xem đó là đã hoàn thành hay đã bỏ qua.
+- Tester 3 gần như không do dự khi dùng C; Nhung cần thử slider và cuộn mới thấy quiz. Trải nghiệm trơn tru không lặp đều ở mọi phiên.
+- Chú giải màu không được để ý ở phiên tester chỉ thử C. Hai phiên còn lại không cung cấp bằng chứng về việc tester nhận ra hay hiểu chú giải này.
+- Cả Nhung và Tester 3 ghi nhận ma sát với A do lượt chẩn đoán làm chậm hoặc ngắt nhịp; Nhung chọn sai câu 2 nhưng vẫn thấy kết luận hữu ích.
+- Cả Nhung và Tester 3 gặp tải lựa chọn ở B: nhiều node/quan hệ khiến họ bối rối hoặc phân vân điểm bắt đầu. Nhung đã dùng reset để lấy lại control.
 
-## 3. Group Next Change — đề xuất cho Option C
+## 3. Group Next Change
 
-> **Đưa quiz một câu lên vị trí dễ thấy ngay trong panel giải thích**, để người học nhận ra bước tự kiểm tra mà không cần kéo xuống hoặc đổi mức phân tích trước.
+> **Giữ C làm hỗ trợ inline mặc định và thêm lối “Chẩn đoán nhanh” tùy chọn cho lúc người học chưa tự khoanh vùng được điểm kẹt**, để tận dụng chẩn đoán của A mà không buộc mọi người đi qua chuỗi hỏi.
 
-**Evidence:** Nhung chỉ nhận ra quiz sau khi kéo slider đến Mức 3 và cuộn xuống. Tester thứ nhất tìm thấy quiz, nhưng một phiên thuận lợi không loại bỏ vấn đề discoverability ở phiên còn lại.
+**Cơ sở:** Nhung chọn C cho việc đọc thường ngày và A làm dự phòng; cả Nhung lẫn Tester 3 thấy chuỗi hỏi A làm chậm hoặc ngắt mạch. C vẫn cần người học biết thuật ngữ nào cần chọn, nên một chẩn đoán ngắn tùy chọn có thể hỗ trợ trường hợp đó. Giữ quiz dễ thấy cũng cần kiểm tra lại vì Nhung ban đầu bỏ lỡ nó.
 
-**Cách kiểm tra ở phiên kế tiếp:** Giao cùng task; không nhắc quiz. Ghi nhận tester có tự tìm thấy quiz trong panel ban đầu không, có hoàn thành không, và họ chọn quay lại bài bằng cách nào.
+**Cách kiểm tra ở iteration kế tiếp:** Giao cùng task mà không chỉ quiz hay chẩn đoán. Quan sát liệu tester tự dùng C trước, có tìm thấy lối chẩn đoán khi không biết chọn thuật ngữ nào, và có thể bỏ qua nó để tiếp tục bài nhanh không.
 
-## 4. Điều còn chưa rõ
+## 4. Điều còn chưa rõ — Still Unproven
 
-- Chưa biết việc trả lời đúng quiz phản ánh hiểu sâu hay chỉ hiểu ngay sau khi đọc phần giải thích.
-- Chưa có dữ liệu lặp lại về việc người học nhận ra chú giải màu hoặc chọn độ sâu phù hợp.
-- Chưa đủ cơ sở để kết luận C tốt hơn A/B: tester thứ nhất chỉ thử C; Nhung đã thử A/B/C nhưng bản tổng hợp này chỉ giữ dữ liệu C theo phạm vi yêu cầu.
-- Chưa có ba feedback note độc lập trong workspace để đánh dấu Gate 5 hoàn tất. Các pain trước đó của Tiên và Chi là evidence về vấn đề học tập, không thay thế kết quả test prototype của họ.
+- Chưa biết việc trả lời đúng quiz phản ánh hiểu sâu hay chỉ hiểu ngay sau khi đọc giải thích.
+- Chưa biết người học có nhận ra chú giải màu và chọn độ sâu phù hợp hay không.
+- Chưa biết tín hiệu ưu tiên C có lặp lại với người học ngoài background tech hay với dạng bài khác không.
+- Chưa đủ dữ liệu so sánh A/B: Nhung và Tester 3 đều thử A/B/C, nhưng mới có hai phiên so sánh; tester đầu tiên chỉ thử C.
+- Ba phiên này không chứng minh learning gain, duy trì ghi nhớ hoặc hiệu quả dài hạn.
 
-## 5. Trạng thái Gate 5
+## 5. Trạng thái Gate 5 — Learning
 
-- [ ] Có đủ ba feedback note độc lập và đối chiếu được nguồn.
-- [x] Có ghi nhận hành vi, ma sát và bằng chứng trái kỳ vọng trong hai phiên Option C.
-- [x] Đề xuất một thay đổi tiếp theo có thể kiểm tra.
-- [x] Ghi rõ giới hạn và điều chưa được chứng minh.
+- [x] Có ba Feedback Notes/phiên tester được ghi trong `prototype-feedback-note.md`; phạm vi từng phiên được nêu rõ.
+- [x] Tổng hợp pattern lặp lại và khác biệt, không gộp các quan sát thiếu thành kết luận.
+- [x] Có một Group Next Change cụ thể và có cách kiểm tra ở phiên tiếp theo.
+- [x] Ghi rõ điều chưa được chứng minh.
+
+**Kết luận:** Gate 5 đạt ở mức đầu ra tổng hợp theo ba phiên đã ghi nhận. Kết quả vẫn là tín hiệu định tính sơ bộ, không phải xác nhận solution đã validated.

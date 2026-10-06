@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.vite/
+.venv/
+venv/
+*.tsbuildinfo
+.DS_Store
+.agents/
+skills-lock.json
+coverage/
+__pycache__/
+*.py[cod]
+*.log
+.env
+.env.*
+!.env.example
